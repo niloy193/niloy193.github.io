@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>xDIO</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+              Cross-domain Imitation from Observations</br>
+                <small>
+                    International Conference on Machine Learning, 2021</br>
+                </small>    
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="text-justify" font-family: 'Didact Gothic'>
+                            <center style="font-size:18px">Long presentation</center>
+                        </p>
+                    </div>
+                </div>         
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://driptarc.github.io/">
+                            Dripta S. Raychaudhuri
+                        </a>
+                      </br>UC Riverside
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/paulsujoy/">
+                          Sujoy Paul
+                        </a>
+                        </br>Google Research
+                    </li>
+                    <li>
+                        <a href="https://www.merl.com/people/jeroen">
+                          Jeroen van Baar
+                        </a>
+                      </br>MERL
+                    </li>
+                    <li>
+                        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">
+                            Amit K. Roy-Chowdhury
+                        </a>
+                        </br>UC Riverside
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row" id="header_img" align="middle">
+            <figure class="col-md-6 col-md-offset-3" align="middle">
+            <image src="data/Project_pages/ICML_2021/concept_diag.jpg" class="img-responsive" alt="overview">
+            <figcaption class="figure-caption text-start">
+              <b>Overview:</b> Cross-domain Imitation from Observation (<i>xDIO</i>) entails learning from expert demonstrations which are different from the agent. 
+            </figcaption>
+            </figure>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                  Imitation learning seeks to circumvent the difficulty in designing proper reward functions for training agents by utilizing expert behavior. With environments modeled as Markov Decision Processes (MDP), most of the existing imitation algorithms are contingent on the availability of expert demonstrations in the <i>same</i> MDP as the one in which a new imitation policy is to be learned. In this paper, we study the problem of how to imitate tasks when there exists discrepancies between the expert and agent MDP. These discrepancies across domains could include differing dynamics, viewpoint or morphology; we present a novel framework to learn correspondences across such domains. Importantly, in contrast to prior works, we use <i>unpaired</i> and <i>unaligned</i> trajectories containing <i>only states</i> in the expert domain, to learn this correspondence. We utilize a cycle-consistency constraint on both the state space and a domain agnostic latent space to do this. In addition, we enforce consistency on the temporal position of states via a normalized position estimator function, to align the trajectories across the two domains. Once this correspondence is found, we can directly transfer the demonstrations on one domain to the other and use it for imitation. Experiments across a wide-variety of challenging domains demonstrate the efficacy of our approach.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Videos
+                </h3>
+                <p class="text-justify">
+                    Videos demonstrating learned policies in 3 morphologically mismatched tasks. For each video, expert is shown on the left and the learned policy on the right.
+                </p>
+                <iframe src="https://drive.google.com/file/d/1wGGntYcqH0qh3_Yk-anyfh4IxEjN6pB1/preview" width="33%" height="160" align="left"></iframe>
+                <iframe src="https://drive.google.com/file/d/1sgXMFwaAr3QcwFAgIqRoT00fhPUTk0e1/preview" width="34%" height="160" align="middle"></iframe>
+                <iframe src="https://drive.google.com/file/d/10XabSSLeStetd2mUJiQ_Sz6go1JT4ALD/preview" width="33%" height="160" align="right"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Downloads
+                </h3>
+                <b>Paper:</b> <a href="https://arxiv.org/abs/2105.10037"> https://arxiv.org/abs/2105.10037</a> </br>
+                <b>Code:</b> Coming soon!
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                <p class="text-justify">
+                  <font face="Courier New">
+                      
+                        @InProceedings{pmlr-v139-raychaudhuri21a, </br>
+                        &nbsp;title = 	 {Cross-domain Imitation from Observations}, </br>
+                        &nbsp;author =       {Raychaudhuri, Dripta S. and Paul, Sujoy and Vanbaar, Jeroen and Roy-Chowdhury, Amit K.}, </br>
+                        &nbsp;booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning}, </br>
+                        &nbsp;pages = 	 {8902--8912}, </br>
+                        &nbsp;year = 	 {2021} </br>
+                         
+                 
+<!--                 @InProceedings{dripta2021icml, </br>
+                  &nbsp; title={Cross-domain Imitation from Observations}, </br>
+                  &nbsp; author={{Raychaudhuri, Dripta S. and Paul, Sujoy and Jeroen, van Baar and Roy-Chowdhury, Amit K.},, </br>
+                  &nbsp; booktitle = {--},</br>
+                  &nbsp; pages = {--},</br>
+                  &nbsp; month = {--},</br>
+                  &nbsp; year={--} </br>
+                } -->
+                  </font>
+              </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was partially supported by Mitsubishi Electric Research Labs and National Institute of Food and Agriculture Award No: 2021-67022-33453 through the National Robotics Initiative.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

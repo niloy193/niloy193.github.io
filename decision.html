@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DECISION</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+              Unsupervised Multi-source Domain Adaptation Without Access to Source Data</br>
+                <small>
+                    CVPR 2021</br>
+                </small>    
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="text-justify" font-family: 'Didact Gothic'>
+                            <center style="font-size:18px">Oral presentation</center>
+                        </p>
+                    </div>
+                </div>         
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                   <li>
+                        <a href="https://www.linkedin.com/in/miraj-ahmed-94727167/">
+                            Sk Miraj Ahmed
+                        </a>
+                      </br>UC Riverside
+                    </li>
+                    <li>
+                        <a href="https://driptarc.github.io/">
+                            Dripta S. Raychaudhuri
+                        </a>
+                      </br>UC Riverside
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/paulsujoy/">
+                          Sujoy Paul
+                        </a>
+                        </br>Google Research
+                    </li>
+                    <li>
+                        <a href="https://intra.ece.ucr.edu/~oymak/">
+                          Samet Oymak
+                        </a>
+                      </br>UC Riverside
+                    </li>
+                    <li>
+                        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">
+                            Amit K. Roy-Chowdhury
+                        </a>
+                        </br>UC Riverside
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row" id="header_img" align="middle">
+            <figure class="col-md-6 col-md-offset-3" align="middle">
+            <image src="data/Project_pages/CVPR_2021/concept_diag.png" class="img-responsive" alt="overview">
+            <figcaption class="figure-caption text-start">
+                <b>Problem setup:</b> Standard unsupervised multi-source domain adaptation (UDA) utilizes the source data, along with the models trained on the source, to perform adaptation on a target domain. In contrast, we introduce a setting which adapts multipl emodels without requiring access to the source data. 
+            </figcaption>
+            </figure>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                  Unsupervised Domain Adaptation (UDA) aims to learn a predictor model for an unlabeled domain by transferring knowledge from a separate labeled source domain. However, most of these conventional UDA approaches make the strong assumption of having access to the source data during training, which may not be very practical due to privacy, security and storage concerns. A recent line of work addressed this problem and proposed an algorithm that transfers knowledge to the unlabeled target domain from a single source model without requiring access to the source data. However, for adaptation purposes, if there are multiple trained source models available to choose from, this method has to go through adapting each and every model individually, to check for the best source. Thus, we ask the question: can we find the optimal combination of source models, with no source data and without target labels, whose performance is no worse than the single best source?
+To answer this, we propose a novel and efficient algorithm which automatically combines the source models with suitable weights in such a way that it performs at least as good as the best source model. We provide intuitive theoretical insights to justify our claim. Furthermore, extensive experiments are conducted on several benchmark datasets to show the effectiveness of our algorithm, where in most cases, our method not only reaches best source accuracy but also outperforms it. 
+                </p>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Downloads
+                </h3>
+                <b>Paper:</b><a href="https://arxiv.org/abs/2104.01845"> https://arxiv.org/abs/2104.01845</a>
+                </br>
+                <b>Code:</b><a href="https://github.com/driptaRC/DECISION"> https://github.com/driptaRC/DECISION</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <p class="text-justify">
+                  <font face="Courier New">
+                      
+                @InProceedings{ahmed2021unsupervised, </br>
+                  &nbsp; title={Unsupervised Multi-source Domain Adaptation Without Access to Source Data}, </br>
+                  &nbsp; author={Ahmed, Sk Miraj and Raychaudhuri, Dripta S and Paul, Sujoy and Oymak, Samet and Roy-Chowdhury, Amit K}, </br>
+                  &nbsp; journal={arXiv preprint arXiv:2104.01845}, </br>
+                  &nbsp; year={2021} </br>
+                }
+                  </font>
+              </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was partially supportedby the ONR grant N00014-19-1-2264 and the NSF grants 2008020, 2046816.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
